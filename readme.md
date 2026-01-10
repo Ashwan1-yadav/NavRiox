@@ -1,5 +1,7 @@
 # 🚀 Ar$enuLL
 
+<img src="./assets/banner.png" alt="Ar$enuLL" width="100%">
+
 ## Introduction
 
 This project represents a **full-stack digital products platform** built to design, develop, and manage modern software solutions for startups, businesses, and content creators.

@@ -33,12 +33,12 @@ const data = {
     livechat: '/live-chat',
   },
   contact: {
-    email: 'hello@Ar$unuLL.com',
+    email: 'hello@Ar$eNuLL.com',
     phone: '+91 000000000',
     address: 'Agra, Uttar Pradesh, India',
   },
   company: {
-    name: 'Ar$uNuLL',
+    name: 'Ar$eNuLL',
     description:
       'Building beautiful and functional web experiences with modern technologies. We help startups and businesses create their digital presence.',
     logo: '/logo.webp',

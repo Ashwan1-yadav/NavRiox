@@ -101,7 +101,7 @@ const Navigation = React.memo(() => {
       className="fixed top-0 w-full z-50 border-b border-gray-800/50 bg-black/80 backdrop-blur-md">
       <nav className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <div className="text-xl font-semibold text-white">Ar$uNuLL</div>
+          <div className="text-xl font-semibold text-white">Ar$eNuLL</div>
           
           <div
             className="hidden md:flex items-center justify-center gap-8 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
@@ -216,7 +216,7 @@ const Hero = React.memo(() => {
         <span
           className="text-xs text-center whitespace-nowrap"
           style={{ color: '#9ca3af' }}>
-          Welcome to Ar$uNuLL
+          Welcome to Ar$eNuLL
         </span>
         <a
           href="#new-version"
