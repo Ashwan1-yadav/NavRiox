@@ -1,8 +1,11 @@
 import React from 'react'
+import ServicesSection from "@/components/ui/services";
 
 const Services = () => {
   return (
-    <div>Services</div>
+    <div>
+      <ServicesSection/>
+    </div>
   )
 }
 
