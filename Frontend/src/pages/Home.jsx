@@ -3,8 +3,7 @@ import React from 'react'
 import Hero from "@/components/ui/saa-s-template";
 import { PremiumTestimonials } from '@/components/ui/premium-testimonials';
 import Footer4Col  from "@/components/ui/footer-column";
-import Component from "@/components/ui/email-card";
-
+import GetInTouch from "@/Components/GetInTouch";
 
 const Home = () => {
   return (
@@ -12,7 +11,8 @@ const Home = () => {
       <FuturisticHero />
       <Hero />
       <PremiumTestimonials/>
-      <Component/>
+      <GetInTouch/>
+      <hr />
       <Footer4Col/>
     </div>
   )

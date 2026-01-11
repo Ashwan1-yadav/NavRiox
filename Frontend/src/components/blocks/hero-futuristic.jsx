@@ -143,8 +143,8 @@ const Scene = () => {
 
 // ---------------- HTML HERO ----------------
 export default function Hero3D() {
-  const titleWords = 'Bring Your Ideas Into Reality'.split(' ');
-  const subtitle = 'AI-powered creativity for the next generation Digital solutions.';
+  const titleWords = 'Bringing Ideas Into Reality'.split(' ');
+  const subtitle = 'Providing digital solutions for the next generation of businesses.';
 
   const [visibleWords, setVisibleWords] = useState(0);
   const [subtitleVisible, setSubtitleVisible] = useState(false);
