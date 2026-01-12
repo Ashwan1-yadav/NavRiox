@@ -22,5 +22,9 @@ app.use(morgan("dev"));
 app.use("/api/v1", contactUsRoute);
 app.use(errorHandler);
 
+app.get("/", (req, res) => {
+  res.send("Hello From Ar$eNuLL Backend");
+});
+
 
 module.exports = app;
