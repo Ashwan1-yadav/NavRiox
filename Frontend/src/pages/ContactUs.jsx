@@ -3,7 +3,7 @@ import { Contact2 } from "@/components/ui/contact-2";
 
 const ContactUs = () => {
   return (
-    <div className='px-18'>
+    <div className='px-10'>
         <Contact2/>
     </div>
   )

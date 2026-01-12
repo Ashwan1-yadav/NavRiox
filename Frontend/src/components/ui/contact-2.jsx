@@ -79,46 +79,58 @@ export const Contact2 = ({
   };
 
   return (
-    <section className="bg-black py-32 text-white">
-      <div className="container mx-auto px-6">
-        <div className="mx-auto flex max-w-screen-xl flex-col gap-16 lg:flex-row lg:gap-24">
-
-          {/* LEFT CONTENT — UNCHANGED */}
-          <div className="flex max-w-sm flex-col gap-12">
+    <section className="bg-black py-20 md:py-32 text-white">
+      <div className="container mx-auto px-4 sm:px-6">
+        <div className="mx-auto flex max-w-screen-xl flex-col gap-14 lg:flex-row lg:gap-24">
+  
+          {/* LEFT CONTENT */}
+          <div className="flex w-full max-w-full sm:max-w-md flex-col gap-10">
             <div>
-              <h1 className="mb-4 text-5xl font-semibold lg:text-6xl">
+              <h1 className="mb-4 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold">
                 {title}
               </h1>
-              <p className="text-gray-400">{description}</p>
+              <p className="text-sm sm:text-base text-gray-400">
+                {description}
+              </p>
             </div>
-
+  
             <div>
-              <h3 className="mb-6 text-2xl font-semibold">
+              <h3 className="mb-4 sm:mb-6 text-xl sm:text-2xl font-semibold">
                 Contact Details
               </h3>
-              <ul className="space-y-3 text-gray-300">
-                <li><span className="font-medium text-white">Phone:</span> {phone}</li>
+              <ul className="space-y-3 text-sm sm:text-base text-gray-300">
                 <li>
+                  <span className="font-medium text-white">Phone:</span>{" "}
+                  {phone}
+                </li>
+                <li className="break-all">
                   <span className="font-medium text-white">Email:</span>{" "}
-                  <a href={`mailto:${email}`} className="underline underline-offset-4">
+                  <a
+                    href={`mailto:${email}`}
+                    className="underline underline-offset-4"
+                  >
                     {email}
                   </a>
                 </li>
-                <li>
+                <li className="break-all">
                   <span className="font-medium text-white">Web:</span>{" "}
-                  <a href={web.url} target="_blank" rel="noreferrer"
-                     className="underline underline-offset-4">
+                  <a
+                    href={web.url}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="underline underline-offset-4"
+                  >
                     {web.label}
                   </a>
                 </li>
               </ul>
             </div>
           </div>
-
-          {/* RIGHT FORM — UI SAME, FIELDS UPDATED */}
+  
+          {/* RIGHT FORM */}
           <form
             onSubmit={handleSubmit}
-            className="w-full max-w-screen-md rounded-xl border border-white/10 bg-neutral-900 p-8 shadow-xl"
+            className="w-full max-w-full md:max-w-screen-md rounded-xl border border-white/10 bg-neutral-900 p-5 sm:p-6 md:p-8 shadow-xl"
           >
             <div className="flex w-full flex-col gap-2">
               <Label className="text-gray-300">Name</Label>
@@ -129,9 +141,11 @@ export const Contact2 = ({
                 className="bg-black border-white/15 text-white"
                 placeholder="Your Name"
               />
-              {errors.name && <p className="text-sm text-red-400">{errors.name}</p>}
+              {errors.name && (
+                <p className="text-sm text-red-400">{errors.name}</p>
+              )}
             </div>
-
+  
             <div className="mt-4 flex flex-col gap-2">
               <Label className="text-gray-300">Email</Label>
               <Input
@@ -142,9 +156,11 @@ export const Contact2 = ({
                 className="bg-black border-white/15 text-white"
                 placeholder="Email"
               />
-              {errors.email && <p className="text-sm text-red-400">{errors.email}</p>}
+              {errors.email && (
+                <p className="text-sm text-red-400">{errors.email}</p>
+              )}
             </div>
-
+  
             <div className="mt-4 flex flex-col gap-2">
               <Label className="text-gray-300">Contact Number</Label>
               <Input
@@ -155,24 +171,28 @@ export const Contact2 = ({
                 placeholder="+91 9999999999"
               />
               {errors.contactNo && (
-                <p className="text-sm text-red-400">{errors.contactNo}</p>
+                <p className="text-sm text-red-400">
+                  {errors.contactNo}
+                </p>
               )}
             </div>
-
+  
             <div className="mt-4 flex flex-col gap-2">
               <Label className="text-gray-300">Message</Label>
               <Textarea
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
-                className="bg-black border-white/15 text-white min-h-[120px]"
+                className="bg-black border-white/15 text-white min-h-[100px] sm:min-h-[120px]"
                 placeholder="Type your message here..."
               />
               {errors.message && (
-                <p className="text-sm text-red-400">{errors.message}</p>
+                <p className="text-sm text-red-400">
+                  {errors.message}
+                </p>
               )}
             </div>
-
+  
             <Button
               type="submit"
               disabled={loading}
@@ -185,4 +205,5 @@ export const Contact2 = ({
       </div>
     </section>
   );
+  
 };
