@@ -107,14 +107,15 @@ export default function DefaultDemo() {
           title="Get in touch"
           description="If you have any questions regarding our services or need help, please fill out the form. We usually respond within 1 business day."
           contactInfo={[
-            { icon: MailIcon, label: "Email", value: "hello@NavRiox.com" },
-            { icon: PhoneIcon, label: "Phone", value: "+91 000000000" },
+            
+            { icon: PhoneIcon, label: "Phone", value: "+91 7500366248" },
             {
               icon: MapPinIcon,
               label: "Address",
               value: "Agra, India",
               className: "col-span-2",
             },
+            { icon: MailIcon, label: "Email", value: "navrioxdigitalsolutions@gmail.com" },
           ]}
         >
           <form className="w-full space-y-4" onSubmit={handleSubmit}>

@@ -12,8 +12,8 @@ const BASE_URL = import.meta.env.VITE_BASE_URL;
 export const Contact2 = ({
   title = "Contact Us",
   description = "We are available for questions, feedback, or collaboration opportunities. Let us know how we can help!",
-  phone = "+91 000000000",
-  email = "hello@NavRiox.com",
+  phone = "+91 7500366248",
+  email = "navrioxdigitalsolutions@gmail.com",
   web = { label: "https://arsunull.vercel.app/", url: "https://arsunull.vercel.app/" },
 }) => {
 

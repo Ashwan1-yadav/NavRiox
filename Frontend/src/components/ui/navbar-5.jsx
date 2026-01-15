@@ -51,11 +51,10 @@ export const Navbar5 = () => {
             <Link to="/">
               <img src={logo} alt="logo" className="h-10 w-auto" />
             </Link>
-            <Link to="/"><span className="ml-2 text-xl font-semibold">NavRiox</span></Link>
           </div>
 
           <div className="hidden md:flex items-center justify-center gap-8 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-            <Link
+            <Link 
               to="/"
               className="text-sm text-white/60 hover:text-white transition-colors"
             >
@@ -111,38 +110,38 @@ export const Navbar5 = () => {
       {mobileMenuOpen && (
         <div className="md:hidden bg-black/95 backdrop-blur-md border-t border-gray-800/50 animate-[slideDown_0.3s_ease-out]">
           <div className="px-6 py-4 flex flex-col gap-4">
-          <Link
+          <Link onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               to="/"
               className="text-sm text-white/60 hover:text-white transition-colors"
             >
               Home
             </Link>
-            <Link
+            <Link onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               to="/services"
               className="text-sm text-white/60 hover:text-white transition-colors"
             >
               Services
             </Link>
-            <Link
+            <Link onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               to="/getintouch"
               className="text-sm text-white/60 hover:text-white transition-colors"
             >
               Get In Touch
             </Link>
-            <Link
+            <Link onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               to="/contact"
               className="text-sm text-white/60 hover:text-white transition-colors"
             >
               Contact Us
             </Link>
-            <Link
+            <Link onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               to="/about"
               className="text-sm text-white/60 hover:text-white transition-colors"
             >
               About
             </Link>
             <div className="flex flex-col gap-2 pt-4 border-t border-gray-800/50">
-            <Button
+            <Button onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               asChild
               size="sm"
               variant="outline"

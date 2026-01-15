@@ -36,8 +36,8 @@ const data = {
     livechat: '/live-chat',
   },
   contact: {
-    email: 'hello@NavRiox.com',
-    phone: '+91 000000000',
+    email: 'navrioxdigitalsolutions@gmail.com',
+    phone: '+91 7500366248',
     address: 'Agra, Uttar Pradesh, India',
   },
   company: {
@@ -84,7 +84,7 @@ const contactInfo = [
 
 export default function Footer4Col() {
   return (
-    <footer className="bg-black text-white mt-16 w-full">
+    <footer className="bg-black text-white mt-16 w-full px-4">
       <div className="mx-auto max-w-screen-xl px-4  pb-6 sm:px-6 lg:px-8 lg:pt-24">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           {/* Brand */}
@@ -93,11 +93,8 @@ export default function Footer4Col() {
               <img
                 src={data.company.logo || '/placeholder.svg'}
                 alt="logo"
-                className="h-8 w-8 rounded-full"
+                className="h-10"
               />
-              <span className="text-2xl font-semibold">
-                {data.company.name}
-              </span>
             </div>
 
             <p className="mt-6 max-w-md text-center text-white/70 leading-relaxed sm:max-w-xs sm:text-left">
@@ -156,32 +153,7 @@ export default function Footer4Col() {
               </ul>
             </div>
 
-            {/* Helpful */}
-            <div className="text-center sm:text-left">
-              <p className="text-lg font-medium">Helpful Links</p>
-              <ul className="mt-8 space-y-4 text-sm">
-                {helpfulLinks.map(({ text, href, hasIndicator }) => (
-                  <li key={text}>
-                    <a
-                      href={href}
-                      className={
-                        hasIndicator
-                          ? 'group flex justify-center gap-1.5 sm:justify-start'
-                          : 'text-white/60 transition hover:text-white'
-                      }
-                    >
-                      <span>{text}</span>
-                      {hasIndicator && (
-                        <span className="relative flex size-2">
-                          <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-75" />
-                          <span className="relative inline-flex size-2 rounded-full bg-primary" />
-                        </span>
-                      )}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
+            
 
             {/* Contact */}
             <div className="text-center sm:text-left">
@@ -213,7 +185,7 @@ export default function Footer4Col() {
               All rights reserved.
             </p>
             <p className="text-sm text-white/60 sm:order-first">
-              &copy; 2025 {data.company.name}
+              &copy; 2026 {data.company.name}
             </p>
           </div>
         </div>
